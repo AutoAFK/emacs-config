@@ -16,7 +16,10 @@
   (setq lsp-keymap-prefix "C-c l")
   :hook (
 	 (python-mode . lsp)
-	 (rust-ts-mode . lsp))
+	 (rust-ts-mode . lsp)))
+
+(use-package org-superstar
+  :ensure tq)
 
 (defun config ()
   "Open the config file in edit mode."
